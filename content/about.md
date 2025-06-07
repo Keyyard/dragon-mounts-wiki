@@ -1,6 +1,6 @@
 ---
 title: About
-description: testing.
+description: This is the description.
 ---
 
-test.
+Welcome to the official Dragon Mounts Wiki!
