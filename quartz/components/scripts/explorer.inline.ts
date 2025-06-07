@@ -205,15 +205,31 @@ async function setupExplorer(currentSlug: FullSlug) {
     const explorerUl = explorer.querySelector(".explorer-ul")
     if (!explorerUl) continue
 
-    // Create and insert new content
+    // Custom rendering order: index page, then root-level files, then folders
     const fragment = document.createDocumentFragment()
-    for (const child of trie.children) {
-      const node = child.isFolder
-        ? createFolderNode(currentSlug, child, opts)
-        : createFileNode(currentSlug, child)
 
-      fragment.appendChild(node)
+    // 1. Index/root page ("index")
+    if (trie.data) {
+      const indexNode = createFileNode(currentSlug, trie)
+      fragment.appendChild(indexNode)
     }
+
+    // 2. Other root-level files (not folders, not index)
+    for (const child of trie.children) {
+      if (!child.isFolder && child.data && child.slug !== "index") {
+        const node = createFileNode(currentSlug, child)
+        fragment.appendChild(node)
+      }
+    }
+
+    // 3. Folders
+    for (const child of trie.children) {
+      if (child.isFolder) {
+        const node = createFolderNode(currentSlug, child, opts)
+        fragment.appendChild(node)
+      }
+    }
+
     explorerUl.insertBefore(fragment, explorerUl.firstChild)
 
     // restore explorer scrollTop position if it exists
