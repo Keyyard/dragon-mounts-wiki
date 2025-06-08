@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Dragons Mounts",
+    pageTitle: "![LOGO](https://imgur.com/sisJQu8.png)",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
