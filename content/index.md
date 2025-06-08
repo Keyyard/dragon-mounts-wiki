@@ -3,4 +3,5 @@ title: Overview
 description: This is the overview page of the site.
 ---
 
-This is the overview page.
+![LOGO](https://imgur.com/sisJQu8.png)
+Welcome to the Dragon Mounts Wikipedia!
