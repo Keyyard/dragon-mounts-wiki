@@ -20,7 +20,7 @@ const config: QuartzConfig = {
     baseUrl: "*", //NOTE: set it when we have a domain to deploy
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
-    theme: {
+     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,
       typography: {
@@ -30,15 +30,15 @@ const config: QuartzConfig = {
       },
       colors: {
         lightMode: {
-          light: "#faf8f8",
-          lightgray: "#e5e5e5",
-          gray: "#b8b8b8",
-          darkgray: "#4e4e4e",
-          dark: "#2b2b2b",
-          secondary: "#284b63",
-          tertiary: "#84a59d",
+          light: "#C14FDF",
+          lightgray: "#C14FDF",
+          gray: "#C14FDF",
+          darkgray: "#C14FDF",
+          dark: "#C14FDF",
+          secondary: "#C14FDF",
+          tertiary: "#C14FDF",
           highlight: "rgba(143, 159, 169, 0.15)",
-          textHighlight: "#fff23688",
+          textHighlight: "#C14FDF",
         },
         darkMode: {
           light: "#161618",
