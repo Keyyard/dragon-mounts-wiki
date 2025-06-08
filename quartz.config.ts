@@ -8,7 +8,7 @@ import * as Plugin from "./quartz/plugins"
  */
 const config: QuartzConfig = {
   configuration: {
-    pageTitle: "Dragons Mount Wiki",
+    pageTitle: "Dragons Mounts",
     pageTitleSuffix: "",
     enableSPA: true,
     enablePopovers: true,
