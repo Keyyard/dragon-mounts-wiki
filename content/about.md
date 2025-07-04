@@ -3,8 +3,6 @@ title: ABOUT
 description: This is the description.
 ---
 
-## About
-
 The Official Dragon Mounts Wiki is where you will find information about each mods in chronological order, whether it's related to dragons or other features.
 ## Why was Dragon Mounts Wiki created?
 
