@@ -1,5 +1,5 @@
 ---
-title: License
+title: LICENSE
 description: This is the license page of the site.
 ---
 
